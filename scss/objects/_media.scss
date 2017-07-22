@@ -1,0 +1,23 @@
+.media__image:not(.image) {
+  --message: "Media's image [`.media__image`] may need to extend the image [`.image`] block.";
+
+  @include notice;
+}
+
+:not(.media) > .media__side {
+	--message: "Item [`.media__side`] must be a direct child of the media [`.media`] block.";
+
+	@include error;
+}
+
+:not(.media) > .media__body {
+	--message: "Item [`.media__body`] must be a direct child of the media [`.media`] block.";
+
+	@include error;
+}
+
+[class*="media--"]:not(.media) {
+	--message: "Media modifiers [`.media--{modifier}`] must extend base media class [`.media`]";
+
+	@include error;
+}

@@ -1,0 +1,11 @@
+.panel__segment:not(.segment) {
+	--message: "Panel's segment [`.panel__segment`] may need to extend the segment [`.segment`] block.";
+
+	@include notice;
+}
+
+:not(.panel) > .panel__segment {
+	--message: "Panel's segment [`.panel__segment`] must be a child of the panel [`.panel`] block.";
+
+	@include error;
+}

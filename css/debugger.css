@@ -1,0 +1,307 @@
+[class*="container--"]:not(.container) {
+  --message: "Container modifiers [`.container--{modifier}`] must extend base container class [`.container`]";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  [class*="container--"]:not(.container):before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  [class*="container--"]:not(.container):before {
+    background-color: tomato; }
+
+:not(.grid) > .grid__column {
+  --message: "Column [`.grid__column`] must be a direct child of the grid [`.grid`] block.";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  :not(.grid) > .grid__column:before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  :not(.grid) > .grid__column:before {
+    background-color: tomato; }
+
+[class*="grid__column--"]:not(.grid__column) {
+  --message: "Column modifiers [`.grid__column--{modifier}`] must extend base column class [`.grid__column`]";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  [class*="grid__column--"]:not(.grid__column):before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  [class*="grid__column--"]:not(.grid__column):before {
+    background-color: tomato; }
+
+img.image:not([alt]) {
+  --message: "Image block should have an alternate text [`alt`] attribute.";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: orange; }
+  img.image:not([alt]):before {
+    content: "{NOTICE} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  img.image:not([alt]):before {
+    background-color: orange; }
+
+[class*="image--"]:not(.image) {
+  --message: "Image modifiers [`.image--{modifier}`] must extend base image class [`.image`]";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  [class*="image--"]:not(.image):before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  [class*="image--"]:not(.image):before {
+    background-color: tomato; }
+
+:not(.list) > .list__item {
+  --message: "Item [`.list__item`] must be a direct child of the list [`.list`] block.";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  :not(.list) > .list__item:before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  :not(.list) > .list__item:before {
+    background-color: tomato; }
+
+[class*="list--"]:not(.list) {
+  --message: "List modifiers [`.list--{modifier}`] must extend base list class [`.list`]";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  [class*="list--"]:not(.list):before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  [class*="list--"]:not(.list):before {
+    background-color: tomato; }
+
+.media__image:not(.image) {
+  --message: "Media's image [`.media__image`] may need to extend the image [`.image`] block.";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: orange; }
+  .media__image:not(.image):before {
+    content: "{NOTICE} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  .media__image:not(.image):before {
+    background-color: orange; }
+
+:not(.media) > .media__side {
+  --message: "Item [`.media__side`] must be a direct child of the media [`.media`] block.";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  :not(.media) > .media__side:before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  :not(.media) > .media__side:before {
+    background-color: tomato; }
+
+:not(.media) > .media__body {
+  --message: "Item [`.media__body`] must be a direct child of the media [`.media`] block.";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  :not(.media) > .media__body:before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  :not(.media) > .media__body:before {
+    background-color: tomato; }
+
+[class*="media--"]:not(.media) {
+  --message: "Media modifiers [`.media--{modifier}`] must extend base media class [`.media`]";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  [class*="media--"]:not(.media):before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  [class*="media--"]:not(.media):before {
+    background-color: tomato; }
+
+[class*="table--"]:not(.table) {
+  --message: "Table modifiers [`.table--{modifier}`] must extend base table class [`.table`]";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  [class*="table--"]:not(.table):before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  [class*="table--"]:not(.table):before {
+    background-color: tomato; }
+
+.panel__segment:not(.segment) {
+  --message: "Panel's segment [`.panel__segment`] may need to extend the segment [`.segment`] block.";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: orange; }
+  .panel__segment:not(.segment):before {
+    content: "{NOTICE} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  .panel__segment:not(.segment):before {
+    background-color: orange; }
+
+:not(.panel) > .panel__segment {
+  --message: "Panel's segment [`.panel__segment`] must be a child of the panel [`.panel`] block.";
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: tomato; }
+  :not(.panel) > .panel__segment:before {
+    content: "{ERROR} " var(--message);
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: help;
+    line-height: 1em;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: -3px; }
+  :not(.panel) > .panel__segment:before {
+    background-color: tomato; }

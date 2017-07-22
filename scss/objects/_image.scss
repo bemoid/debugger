@@ -1,0 +1,11 @@
+img.image:not([alt]) {
+	--message: "Image block should have an alternate text [`alt`] attribute.";
+
+	@include notice;
+}
+
+[class*="image--"]:not(.image) {
+	--message: "Image modifiers [`.image--{modifier}`] must extend base image class [`.image`]";
+
+	@include error;
+}

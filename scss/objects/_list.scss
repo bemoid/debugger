@@ -1,0 +1,11 @@
+:not(.list) > .list__item {
+	--message: "Item [`.list__item`] must be a direct child of the list [`.list`] block.";
+
+	@include error;
+}
+
+[class*="list--"]:not(.list) {
+	--message: "List modifiers [`.list--{modifier}`] must extend base list class [`.list`]";
+
+	@include error;
+}

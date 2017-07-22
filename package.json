@@ -1,0 +1,24 @@
+{
+  "name": "@bemoid/debugger",
+  "version": "1.0.0",
+  "description": "A tool to helps you build correct components using the Bemoid framework.",
+  "main": "scss/debugger.scss",
+  "scripts": {
+    "build": "node-sass scss/debugger.scss > css/debugger.css"
+  },
+  "keywords": [
+    "debugger",
+    "bemoid",
+    "oocss",
+    "bem",
+    "sass"
+  ],
+  "author": "Jędrzej Chałubek",
+  "license": "MIT",
+  "dependencies": {
+    "@bemoid/bemoid": "file:../bemoid"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.2"
+  }
+}
