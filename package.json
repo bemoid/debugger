@@ -7,11 +7,8 @@
     "build": "node-sass scss/debugger.scss > css/debugger.css"
   },
   "keywords": [
-    "debugger",
     "bemoid",
-    "oocss",
-    "bem",
-    "sass"
+    "debugger"
   ],
   "author": "Jędrzej Chałubek",
   "license": "MIT",
