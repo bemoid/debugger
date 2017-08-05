@@ -1,0 +1,23 @@
+.dropdown__panel:not(.panel) {
+  --message: "Dropdown's panel [`.dropdown__panel`] may need to extend the panel [`.panel`] block.";
+
+  @include notice;
+}
+
+[class*="dropdown--"]:not(.dropdown) {
+  --message: "Dropdown modifiers [`.dropdown--{modifier}`] must extend base dropdown class [`.dropdown`]";
+
+  @include error;
+}
+
+:not(.dropdown) > .dropdown__trigger {
+  --message: "Dropdown's trigger [`.dropdown__trigger`] must be a direct child of the dropdown [`.dropdown`] block.";
+
+  @include error;
+}
+
+:not(.dropdown) > .dropdown__content {
+  --message: "Dropdown's trigger [`.dropdown__content`] must be a direct child of the dropdown [`.dropdown`] block.";
+
+  @include error;
+}

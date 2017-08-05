@@ -5,7 +5,7 @@
 }
 
 :not(.panel) > .panel__segment {
-	--message: "Panel's segment [`.panel__segment`] must be a child of the panel [`.panel`] block.";
+	--message: "Panel's segment [`.panel__segment`] must be a direct child of the panel [`.panel`] block.";
 
 	@include error;
 }
