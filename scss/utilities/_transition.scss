@@ -1,0 +1,5 @@
+[class*="transition--"]:not(.transition) {
+  --message: "Transition modifiers [`.transition--{modifier}`] must extend base transition [`.transition`] block.";
+
+  @include error;
+}

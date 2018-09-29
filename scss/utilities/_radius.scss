@@ -1,0 +1,5 @@
+[class*="radius--"]:not(.radius) {
+  --message: "Radius modifiers [`.radius--{modifier}`] must extend base radius [`.radius`] block.";
+
+  @include error;
+}

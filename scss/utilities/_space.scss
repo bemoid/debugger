@@ -1,0 +1,5 @@
+[class*="space--"]:not(.space) {
+  --message: "Space modifiers [`.space--{modifier}`] must extend base space [`.space`] block.";
+
+  @include error;
+}

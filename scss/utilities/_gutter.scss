@@ -1,0 +1,5 @@
+[class*="gutter--"]:not(.gutter) {
+  --message: "Gutter modifiers [`.gutter--{modifier}`] must extend base gutter [`.gutter`] block.";
+
+  @include error;
+}

@@ -1,0 +1,5 @@
+[class*="elevator--"]:not(.elevator) {
+  --message: "Elevator modifiers [`.elevator--{modifier}`] must extend base elevator [`.elevator`] block.";
+
+  @include error;
+}
