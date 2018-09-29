@@ -6,9 +6,20 @@
 @import 'objects/container';
 @import 'objects/dropdown';
 @import 'objects/grid';
+@import 'objects/heading';
 @import 'objects/image';
 @import 'objects/list';
 @import 'objects/media';
-@import 'objects/table';
+@import 'objects/paragraph';
+@import 'objects/segment';
+@import 'objects/waffle';
+@import 'objects/wrapper';
 
 @import 'components/panel';
+@import 'components/table';
+
+@import 'utilities/elevator';
+@import 'utilities/gutter';
+@import 'utilities/radius';
+@import 'utilities/space';
+@import 'utilities/transition';
