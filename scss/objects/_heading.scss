@@ -1,0 +1,10 @@
+h1:not(.heading),
+h2:not(.heading),
+h3:not(.heading),
+h4:not(.heading),
+h5:not(.heading),
+h6:not(.heading) {
+	--message: "Heading elements may need to extend [`.heading`] block.";
+
+	@include notice;
+}

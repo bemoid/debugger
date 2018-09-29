@@ -17,7 +17,7 @@
 }
 
 [class*="media--"]:not(.media) {
-	--message: "Media modifiers [`.media--{modifier}`] must extend base media class [`.media`]";
+	--message: "Media modifiers [`.media--{modifier}`] must extend base media [`.media`] block.";
 
 	@include error;
 }

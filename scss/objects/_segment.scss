@@ -1,0 +1,5 @@
+[class*="segment--"]:not(.segment) {
+  --message: "Segment modifiers [`.segment--{modifier}`] must extend base segment [`.segment`] block";
+
+  @include error;
+}

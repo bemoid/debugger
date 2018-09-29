@@ -1,5 +1,5 @@
 [class*="container--"]:not(.container) {
-	--message: "Container modifiers [`.container--{modifier}`] must extend base container class [`.container`]";
+	--message: "Container modifiers [`.container--{modifier}`] must extend base container [`.container`] block.";
 
 	@include error;
 }

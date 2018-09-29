@@ -5,9 +5,7 @@
 }
 
 [class*="grid__column--"]:not(.grid__column) {
-	--message: "Column modifiers [`.grid__column--{modifier}`] must extend base column class [`.grid__column`]";
+	--message: "Column modifiers [`.grid__column--{modifier}`] must extend base column [`.grid__column`] element.";
 
 	@include error;
 }
-
-

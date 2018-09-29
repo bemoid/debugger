@@ -5,7 +5,7 @@
 }
 
 [class*="dropdown--"]:not(.dropdown) {
-  --message: "Dropdown modifiers [`.dropdown--{modifier}`] must extend base dropdown class [`.dropdown`]";
+  --message: "Dropdown modifiers [`.dropdown--{modifier}`] must extend base dropdown [`.dropdown`] block.";
 
   @include error;
 }

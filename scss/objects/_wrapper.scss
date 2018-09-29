@@ -1,0 +1,5 @@
+[class*="wrapper--"]:not(.wrapper) {
+  --message: "Wrapper modifiers [`.wrapper--{modifier}`] must extend base wrapper [`.wrapper`] block.";
+
+  @include error;
+}

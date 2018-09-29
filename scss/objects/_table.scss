@@ -1,5 +1,0 @@
-[class*="table--"]:not(.table) {
-	--message: "Table modifiers [`.table--{modifier}`] must extend base table class [`.table`]";
-
-	@include error;
-}

@@ -5,7 +5,7 @@ img.image:not([alt]) {
 }
 
 [class*="image--"]:not(.image) {
-	--message: "Image modifiers [`.image--{modifier}`] must extend base image class [`.image`]";
+	--message: "Image modifiers [`.image--{modifier}`] must extend base image [`.image`] block.";
 
 	@include error;
 }

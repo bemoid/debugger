@@ -1,0 +1,11 @@
+:not(.waffle) > .waffle__cell {
+  --message: "Cell [`.waffle__cell`] must be a direct child of the waffle [`.waffle`] block.";
+
+  @include error;
+}
+
+[class*="waffle__cell--"]:not(.waffle__cell) {
+  --message: "Cell modifiers [`.waffle__cell--{modifier}`] must extend base column [`.waffle__cell`] element.";
+
+  @include error;
+}

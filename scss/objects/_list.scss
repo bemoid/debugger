@@ -5,7 +5,7 @@
 }
 
 [class*="list--"]:not(.list) {
-	--message: "List modifiers [`.list--{modifier}`] must extend base list class [`.list`]";
+	--message: "List modifiers [`.list--{modifier}`] must extend base list [`.list`] block.";
 
 	@include error;
 }
