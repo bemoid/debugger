@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/debugger",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A tool to helps you build correct components using the Bemoid framework.",
   "main": "scss/debugger.scss",
   "scripts": {
