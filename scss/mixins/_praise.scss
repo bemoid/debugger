@@ -1,9 +1,9 @@
 @mixin praise {
-    @include hint('PRAISE');
+  @include hint('PRAISE');
 
-    outline-color: olive;
+  outline-color: olive;
 
-    &:before {
-        background-color: olive;
-    }
+  &:before {
+      background-color: olive;
+  }
 }

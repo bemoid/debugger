@@ -1,11 +1,11 @@
 :not(.grid) > .grid__column {
-	--message: "Column [`.grid__column`] must be a direct child of the grid [`.grid`] block.";
+  --message: "Column [`.grid__column`] must be a direct child of the grid [`.grid`] block.";
 
-	@include error;
+  @include error;
 }
 
 [class*="grid__column--"]:not(.grid__column) {
-	--message: "Column modifiers [`.grid__column--{modifier}`] must extend base column [`.grid__column`] element.";
+  --message: "Column modifiers [`.grid__column--{modifier}`] must extend base column [`.grid__column`] element.";
 
-	@include error;
+  @include error;
 }

@@ -1,9 +1,9 @@
 @mixin error {
-	@include hint('ERROR');
+  @include hint('ERROR');
 
-    outline-color: tomato;
+  outline-color: tomato;
 
-    &:before {
-    	background-color: tomato;
-    }
+  &:before {
+    background-color: tomato;
+  }
 }

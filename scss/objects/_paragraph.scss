@@ -1,5 +1,5 @@
 p:not(.paragraph) {
-	--message: "Paragraph elements may need to extend [`.paragraph`] block.";
+  --message: "Paragraph elements may need to extend [`.paragraph`] block.";
 
-	@include notice;
+  @include notice;
 }

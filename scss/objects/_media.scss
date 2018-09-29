@@ -5,19 +5,19 @@
 }
 
 :not(.media) > .media__side {
-	--message: "Item [`.media__side`] must be a direct child of the media [`.media`] block.";
+  --message: "Item [`.media__side`] must be a direct child of the media [`.media`] block.";
 
-	@include error;
+  @include error;
 }
 
 :not(.media) > .media__body {
-	--message: "Item [`.media__body`] must be a direct child of the media [`.media`] block.";
+  --message: "Item [`.media__body`] must be a direct child of the media [`.media`] block.";
 
-	@include error;
+  @include error;
 }
 
 [class*="media--"]:not(.media) {
-	--message: "Media modifiers [`.media--{modifier}`] must extend base media [`.media`] block.";
+  --message: "Media modifiers [`.media--{modifier}`] must extend base media [`.media`] block.";
 
-	@include error;
+  @include error;
 }

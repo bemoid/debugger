@@ -1,9 +1,9 @@
 @mixin notice {
-	@include hint('NOTICE');
+  @include hint('NOTICE');
 
-    outline-color: orange;
+  outline-color: orange;
 
-    &:before {
-    	background-color: orange;
-    }
+  &:before {
+    background-color: orange;
+  }
 }
