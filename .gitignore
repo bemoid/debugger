@@ -1,6 +1,9 @@
-.DS_Store
-node_modules
-npm-debug.log
-*.swp
+css/*
+!css/.gitkeep
 
-dist/
+node_modules/
+
+npm-debug.log
+
+.DS_Store
+Thumbs.db
